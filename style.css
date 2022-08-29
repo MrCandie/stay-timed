@@ -1,0 +1,265 @@
+body {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  background-color: #111;
+  font-family: "Edu VIC WA NT Beginner", cursive;
+  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: #555;
+  color: #fff;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.head a {
+  margin-left: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+.head ul {
+  margin-right: 2rem;
+}
+.head ul li {
+  list-style: none;
+  display: inline-block;
+}
+.head ul li a {
+  color: #eee;
+  margin: 1rem;
+  font-size: 1rem;
+  transition: all 0.5s;
+}
+.head ul li a:hover,
+.head ul li a:focus {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+main {
+  height: 100vh;
+  width: 80%;
+  margin: 1rem auto;
+  overflow: scroll;
+}
+.europe {
+  width: 80%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+.europe h1 {
+  padding: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  background-color: gold;
+  width: 100px;
+  color: #000;
+  border-radius: 1rem;
+  font-size: 1rem;
+  transition: all 0.5s;
+}
+.europe h1:hover,
+.europe h1:focus {
+  background-color: goldenrod;
+  color: #fff;
+  font-weight: bolder;
+}
+.europe h1:active {
+  background-color: orange;
+}
+.section1 {
+  margin: 1rem;
+  text-align: center;
+}
+.section1 p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.section1 input {
+  width: 50%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+}
+.section1 input:hover,
+.section1 input:focus {
+  border: 1px solid gray;
+}
+.section1 input::placeholder {
+  text-align: center;
+}
+.section1 button {
+  padding: 0.5rem;
+  background-color: #eee;
+  border: none;
+  border-radius: 1rem;
+}
+.section1 button:hover,
+.section1 button:focus {
+  background-color: goldenrod;
+}
+
+.section2,
+.section3,
+.section4,
+.section5 {
+  background-color: rgba(255, 212, 133, 0.551);
+  width: 80%;
+  margin: 1rem auto;
+  border: 1px solid orange;
+  border-radius: 1rem;
+  display: flex;
+
+  padding: 1rem;
+  transition: all 0.5s;
+}
+.section3 {
+  background-color: rgba(127, 255, 212, 0.402);
+}
+.section4 {
+  background-color: rgba(172, 255, 47, 0.406);
+}
+.section2 .zone1,
+.section3 .zone1,
+.section4 .zone1,
+.section5 .zone1 {
+  flex-basis: 50%;
+  justify-content: space-around;
+  padding: 1rem;
+  align-items: center;
+  margin: 0 1rem;
+}
+.section2 .zone1 p,
+.section3 .zone1 p,
+.section4 .zone1 p,
+.section5 .zone1 p {
+  color: #000;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+}
+.section2 .zone2,
+.section3 .zone2,
+.section4 .zone2,
+.section5 .zone2 {
+  flex-basis: 50%;
+  padding: 1rem;
+}
+.section2 .zone2 p,
+.section3 .zone2 p,
+.section4 .zone2 p,
+.section5 .zone2 p {
+  color: #000;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  background-color: transparent;
+  height: 50px;
+}
+footer .foot ul li {
+  list-style: none;
+  display: inline-block;
+}
+footer .foot ul li a {
+  text-decoration: none;
+  text-decoration: none;
+  color: #ccc;
+  transition: all 0.5s;
+  margin: 0.5rem;
+}
+footer .foot ul li a:hover,
+footer .foot ul li a:focus {
+  color: #000;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+footer .foot1 ul li {
+  list-style: none;
+  display: inline-block;
+}
+footer .foot1 ul li a {
+  color: #888;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.8rem;
+  transition: all 0.5s;
+}
+footer .foot1 ul li a:hover,
+footer .foot1 ul li a:focus {
+  color: #000;
+  font-weight: bolder;
+}
+
+.hide {
+  display: none;
+}
+@media (max-width: 800px) {
+  .section2,
+  .section3,
+  .section4 {
+    width: 100%;
+    display: block;
+    padding: 0;
+  }
+  main {
+    overflow: scroll;
+  }
+  .section1 p {
+    font-size: 0.7rem;
+  }
+  .hide {
+    display: none;
+  }
+  .europe {
+    display: inline-block;
+  }
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .head a {
+    font-size: 0.8rem;
+  }
+  .head ul li a {
+    font-size: 0.5rem;
+    margin: 0.5rem;
+  }
+  footer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    background-color: #222;
+    height: 100px;
+  }
+  .foot,
+  .foot1 {
+    flex-basis: 50%;
+    padding: 0.5rem;
+  }
+  .foot ul li a,
+  .foot1 ul li a {
+    font-size: 0.5rem;
+    margin: 0;
+  }
+}
